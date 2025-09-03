@@ -1,0 +1,107 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #3a004f; /* deep purple */
+    color: white;
+    padding: 20px 0;
+}
+
+
+header img {
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(2px 2px 4px white);
+}
+
+
+/* Navigation */
+nav {
+    background-color: #2a0038; /* darker purple */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main content */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+/* Job listings */
+section {
+    width: 70%;
+}
+
+
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+article h3 {
+    margin: 0 0 5px;
+    color: #3a004f;
+}
+
+
+/* Aside section */
+aside {
+    width: 25%;
+    background-color: #f0e6f6;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #3a004f;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
