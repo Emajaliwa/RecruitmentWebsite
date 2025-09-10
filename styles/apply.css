@@ -1,0 +1,130 @@
+/* Body & background */
+body {
+    background-image: url("../images/recruitment_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #3a004f; /* deep purple */
+    color: white;
+    padding: 20px 0;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(2px 2px 4px white);
+}
+
+
+/* Navigation bar styling */
+nav {
+    background-color: #2a0038; /* darker purple */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* Main form container */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px 20px;
+    align-items: center;
+}
+
+/* Labels aligned right */
+form label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Inputs, selects, textarea styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Textarea full width across 2 columns */
+form textarea {
+    grid-column: 2 / 3;
+}
+
+/* Fieldsets (e.g., gender, skills) */
+fieldset {
+    grid-column: 2 / 3;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Submit button */
+form button {
+    grid-column: 2 / 3;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+}

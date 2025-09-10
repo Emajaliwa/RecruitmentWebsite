@@ -65,43 +65,59 @@ main {
 }
 
 
-/* Job listings */
-section {
-    width: 70%;
+/* Apply Page Form Styling */
+.application-form {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* label column + input column */
+    gap: 15px 20px; /* row gap, column gap */
+    max-width: 800px; /* constrain form width */
+    margin: 30px auto; /* center on page with top/bottom spacing */
+    background-color: rgba(255,255,255,0.85); /* semi-transparent background */
+    padding: 20px;
+    border-radius: 8px; /* rounded corners for clean look */
 }
 
-
-article {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+.application-form label {
+    text-align: right; /* align labels to the right */
+    padding-right: 10px;
+    align-self: center; /* vertically center labels next to inputs */
 }
 
-
-article h3 {
-    margin: 0 0 5px;
-    color: #3a004f;
+.application-form input,
+.application-form select,
+.application-form textarea {
+    width: 100%; /* inputs fill their column */
+    padding: 8px;
+    box-sizing: border-box; /* include padding in width */
 }
 
-
-/* Aside section */
-aside {
-    width: 25%;
-    background-color: #f0e6f6;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    height: fit-content;
+.application-form fieldset {
+    grid-column: 1 / span 2; /* fieldset spans both columns */
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
+.application-form legend {
+    font-weight: bold;
+}
 
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #3a004f;
+.application-form button {
+    grid-column: 2; /* button aligns under inputs column */
+    padding: 10px 20px;
+    background-color: #4B0082; /* deep purple consistent with nav */
     color: white;
-    padding: 15px;
-    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.application-form button:hover {
+    background-color: #6A0DAD; /* lighter purple on hover */
+}
+
+/* Header & Navigation same as Jobs page */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
