@@ -10,50 +10,38 @@ body {
 
 /* Header */
 header {
+    background-color: rgba(255, 255, 255, 0.85); /* want to ensure we can read the text*/
     text-align: center;
-    background-color: #3a004f; /* deep purple */
-    color: white;
-    padding: 20px 0;
+    padding: 20px;
 }
-
 
 header img {
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(2px 2px 4px white);
+    width: 150px;
+    filter: drop-shadow(2px 2px 4px black);
 }
 
 
-/* Navigation */
+/* Navigation bar styling */
 nav {
-    background-color: #2a0038; /* darker purple */
+    background-color: #2a0038;
     text-align: center;
-    padding: 10px 0;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-nav li {
-    display: inline;
-    margin: 0 20px;
+    padding: 10px;
 }
 
 
 nav a {
     color: white;
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 15px;
 }
 
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #3a004f;
+    border-radius: 4px;
 }
 
 
