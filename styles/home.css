@@ -207,7 +207,7 @@ body {
 }
 
 .statistics-grid {
-    width: 50%;
+    width: 40%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
