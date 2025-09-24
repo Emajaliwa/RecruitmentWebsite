@@ -177,23 +177,16 @@ body {
 
 }
 
-.hero-text{
-    /* background-color: blue; */
-    color: white;
-    /* font-size:; */
-    font-weight: 200;
-}
-
-.hero-text2 {
-    padding-top: 15px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .group-photo img {
     max-width: 600px;
     border: 3px solid white;
     border-radius: 10px;
+}
+
+ figcaption {
+    color: white;
+    font-weight: 200;
+    margin-top: 10px;
 }
 
 
@@ -230,7 +223,7 @@ body {
 
 .repo-text{
     /* background-color: blue; */
-    color: white;
+    color: #ffffff;
     /* font-size:; */
     font-size: 14px;
     font-weight: 200;
@@ -239,9 +232,88 @@ body {
 /* about us section styles */
 
 main {
-    margin: 0;
+    /* background-color: gold;  */
+    filter: brightness(85%);  
+    position: relative;
+}
+
+main .about-us {
+    /* background-color: #ff4c4c; */
     padding: 0;
-    max-width: 50%;
-    background-color: #ff4c4c;
+    margin: auto;
+    max-width: 70%;
+}
+
+main ul li {
+    margin-left: 30px;
+}
+
+.about-us {
+    font-weight: 300; 
+    font-size: 16px; 
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+.about-us-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size:xx-large;     
+    font-weight: 300;    
+}
+.about-us-title2 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+     font-size:x-large;     
+    font-weight: 400;    
+}
+
+
+dl dt {
+    margin-top: 10px;
+}
+
+.fun-facts {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+th {
+    font-weight: 400;
+    border: 1px solid black;
+
+}
+
+ td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+
+
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* aside styles */
+aside {
+    position: absolute;
+    top: 90px;
+    right: 350px;
+}
+
+
+aside p {
+    font-weight: 300; 
+    font-size: 16px; 
 }
 

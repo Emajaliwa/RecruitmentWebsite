@@ -239,7 +239,7 @@ body {
     max-width: 60%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 25px; 
 }
 
@@ -277,12 +277,12 @@ body {
     font-size: 14px; 
 }
 
+/* footer styles */
+
 .ending-section {
     margin: 0;
     padding: 0;
-    background-color: #262626;
-    /* height: 135px; */
-    
+    background-color: #262626;    
 }
 
 .ending-container {
