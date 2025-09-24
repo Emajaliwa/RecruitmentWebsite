@@ -7,7 +7,11 @@
     <meta name="author" content="NIWS Recruitment Team">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NIWS Recruitment - Jobs</title>
-    <link rel="stylesheet" href="styles/jobs.css">
+    <link rel="stylesheet" href="./styles/jobs.css?v=1">
+    <style>
+        aside.compliance{width:25%;float:right;border:2px solid #7c3aed;padding:12px;margin:12px 16px;background:#efe9ff;border-radius:8px}
+        .salary-chip{background:#e2d6ff;padding:2px 6px;border-radius:6px;font-weight:600}
+    </style>
 </head>
 <body>
     <header>
@@ -16,7 +20,7 @@
         <h2>Available Opportunities</h2>
     </header>
 
-    <nav>
+    <nav aria-label="Primary">
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="jobs.html" aria-current="page">Jobs</a></li>
@@ -26,50 +30,105 @@
     </nav>
 
     <main>
-        <section>
-            <article>
-                <h3>Software Developer</h3>
-                <h4>PixelWorks Studios</h4>
-                <p>PixelWorks Studios is expanding its tech team to support new game development projects. We are looking for passionate developers with skills in C++, Unity, or Unreal Engine. Join us in building immersive gaming experiences for a global audience.</p>
+        <section class="page-intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Featured IT Roles</h2>
+        </section>
+
+        <section class="featured" aria-label="Featured roles">
+            <article class="job-card" aria-labelledby="ref-A1B2C">
+                <header class="job-card__head">
+                    <h3 id="ref-A1B2C">Ref: A1B2C — Software Developer</h3>
+                    <p class="company">Company: PixelWorks Studios</p>
+                </header>
+                <p><strong>Short description:</strong> Build new game features in C++/Unity for console and PC in an agile team.</p>
+                <p><strong>Salary:</strong> <span class="salary-chip" style="box-shadow:0 0 0 1px rgba(0,0,0,.05)">$95,000–$120,000</span> + super</p>
+                <p><strong>Reports to:</strong> Lead Game Engineer</p>
+
+                <section aria-labelledby="resp-dev">
+                    <h4 id="resp-dev">Key responsibilities</h4>
+                    <ol>
+                        <li>Ship gameplay features with clean, testable code</li>
+                        <li>Profile and optimize frame-time and memory usage</li>
+                        <li>Collaborate with Design and Art in 2‑week sprints</li>
+                        <li>Participate in code reviews and technical planning</li>
+                    </ol>
+                </section>
+
+                <section aria-labelledby="req-dev">
+                    <h4 id="req-dev">Requirements</h4>
+                    <ul>
+                        <li><strong>Essential:</strong> C++ proficiency; Unity or Unreal; Git; debugging tools</li>
+                        <li><strong>Preferable:</strong> Console certification; networked gameplay; shaders; 3D math</li>
+                    </ul>
+                </section>
             </article>
 
-            <article>
-                <h3>Cybersecurity Analyst</h3>
-                <h4>SecureNet Solutions</h4>
-                <p>SecureNet Solutions is growing its technology division to enhance global security services. We seek skilled analysts to identify threats, assess vulnerabilities, and help protect mission-critical systems from cyber risks.</p>
-            </article>
+            <article class="job-card" aria-labelledby="ref-9X7QK">
+                <header class="job-card__head">
+                    <h3 id="ref-9X7QK">Ref: 9X7QK — Cybersecurity Analyst</h3>
+                    <p class="company">Company: SecureNet Solutions</p>
+                </header>
+                <p><strong>Short description:</strong> Monitor, triage, and respond to threats across cloud and on‑prem infrastructure.</p>
+                <p><strong>Salary:</strong> <span class="salary-chip">$105,000–$135,000</span> + benefits</p>
+                <p><strong>Reports to:</strong> SOC Manager</p>
 
-            <article>
-                <h3>Digital Learning Support Officer</h3>
-                <h4>Metro University</h4>
-                <p>Metro University is seeking support staff to assist digital learning and research projects. This role includes maintaining e-learning platforms, supporting staff with digital tools, and contributing to education innovation.</p>
-            </article>
+                <section aria-labelledby="resp-cyber">
+                    <h4 id="resp-cyber">Key responsibilities</h4>
+                    <ol>
+                        <li>Investigate alerts and produce incident reports</li>
+                        <li>Hunt for IOCs and tune detections</li>
+                        <li>Advise clients on remediation and hardening</li>
+                        <li>Maintain and tune SIEM/XDR rules</li>
+                    </ol>
+                </section>
 
-            <article>
-                <h3>Volunteer Web Developer</h3>
-                <h4>Tech4Good</h4>
-                <p>Tech4Good is a non-profit organisation building its technology capacity with volunteers. We are looking for developers to help design, maintain, and improve digital platforms that support community initiatives.</p>
-            </article>
-
-            <article>
-                <h3>UI/UX Designer</h3>
-                <h4>InnovateX</h4>
-                <p>InnovateX, a growing startup, is strengthening its design and product team with creative talent. We are looking for UI/UX designers passionate about building user-centered digital products that solve real-world problems.</p>
-            </article>
-
-            <article>
-                <h3>IT Systems Administrator</h3>
-                <h4>Department of Digital Services</h4>
-                <p>The Department of Digital Services is enhancing IT and digital solutions to better serve citizens. We need skilled IT administrators to maintain systems, ensure uptime, and deliver secure public services.</p>
+                <section aria-labelledby="req-cyber">
+                    <h4 id="req-cyber">Requirements</h4>
+                    <ul>
+                        <li><strong>Essential:</strong> SIEM/XDR; MITRE ATT&CK; scripting (Python/Bash); network protocols</li>
+                        <li><strong>Preferable:</strong> Azure/M365 Defender; SEC+/GCIH/CISSP; forensics tools</li>
+                    </ul>
+                </section>
             </article>
         </section>
 
-        <aside>
+        <section class="more" aria-labelledby="more-title">
+            <h2 id="more-title">Other Available Jobs</h2>
+
+            <div class="tiles">
+                <article class="tile tile--p200">
+                    <h3>Digital Learning Support Officer</h3>
+                    <h4>Metro University</h4>
+                    <p>Support e‑learning platforms, assist staff with digital tools, and contribute to education innovation.</p>
+                </article>
+
+                <article class="tile tile--p300">
+                    <h3>UI/UX Designer</h3>
+                    <h4>InnovateX</h4>
+                    <p>Create user‑centred designs and collaborate with product and engineering to ship great experiences.</p>
+                </article>
+
+                <article class="tile tile--p400">
+                    <h3>IT Systems Administrator</h3>
+                    <h4>Department of Digital Services</h4>
+                    <p>Maintain systems, ensure uptime, and deliver secure digital services for citizens.</p>
+                </article>
+
+                <article class="tile tile--p500">
+                    <h3>Volunteer Web Developer</h3>
+                    <h4>Tech4Good</h4>
+                    <p>Design and maintain platforms that support community initiatives as part of a volunteer team.</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="compliance" aria-label="Why Work With NIWS">
             <h3>Why Work With NIWS?</h3>
             <ul>
-                <li>20+ years of recruitment experience</li>
-                <li>Specialists in IT and Technology careers</li>
-                <li>Trusted by startups, enterprises, and government</li>
+                <li>20+ years in IT & technology recruitment</li>
+                <li>Resume and interview coaching</li>
+                <li>Coverage from startups to government</li>
+                <li>Personal career consultation sessions</li>
             </ul>
         </aside>
     </main>
