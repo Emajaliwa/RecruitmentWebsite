@@ -14,7 +14,7 @@ body {
 /* Top nav (black bar styles) - will make more compact later (MD) */
 .top-nav {
     padding: 10px;
-    /* height: 25px; */
+    height: 25px;
     /* width: 100%; */
     max-width: 100%;
     background-color: #262626;
