@@ -3,6 +3,7 @@ body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;   
     line-height: 1.6;  
+
 }
 
 /* Top nav (black bar styles) - will make more compact later (MD) */
@@ -270,16 +271,21 @@ body {
 }
 
 .ending-section {
-    height: 150px;
+    margin: 0;
+    padding: 0;
     background-color: #262626;
+    /* height: 135px; */
     
 }
 
 
 .ending-container {
-    /* background-color:blue; */
-    padding-top: 25px;
+    padding-bottom: 25px; 
+    padding-top: 26px;
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -318,6 +324,10 @@ body {
     }
 
     .nav-list {
+       gap: 10px;
+    }
+
+    .site-title{
         display: none;
     }
 
@@ -346,12 +356,16 @@ body {
 
     }
 
+    .site-title{
+        display: none;
+    }
+
     .top-nav-text {
         display: none; 
     }
 
       .nav-list {
-        display: none;
+        gap: 30px;
     }
 
     .nav-bar {
