@@ -293,7 +293,7 @@ body {
     margin-bottom: 0;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 70%;
 }
