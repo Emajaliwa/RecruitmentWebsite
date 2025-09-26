@@ -6,7 +6,7 @@
 }
 
 
-
+/* style to apply to body */
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;   
@@ -16,7 +16,7 @@ body {
 
 }
 
-/* Top nav (black bar styles) - will make more compact later (MD) */
+/* Top nav (black bar styles) */
 .top-nav {
     padding: 10px;
     /* height: 25px; */
@@ -82,8 +82,8 @@ body {
     /* border-left: 1px solid aliceblue; */
 
 }
-/* Top nav (black bar styles) end */
 
+/* Top nav (black bar styles) end */
 .hero-section {
     background-image: url(../assets/photo.jpg);
     background-size: cover;
@@ -201,6 +201,11 @@ body {
     font-weight: 300;
 }
 
+.more:hover {
+     background-color: lightblue;
+
+}
+
 /* Start of main body styles */
 
 .why-choose-us {
@@ -316,9 +321,7 @@ body {
 
 
 
-/* Responsive webpage */
-
-
+/*Making Responsive webpage */
 @media (max-width: 480px) {
     .statistics-grid {
         grid-template-columns: repeat(1, 1fr) !important;
