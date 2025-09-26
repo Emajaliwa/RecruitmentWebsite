@@ -322,10 +322,6 @@ form button:hover {
 }
 
 @media (max-width: 1200px) {
-      .statistics-grid {
-        grid-template-columns: repeat(2, 1fr);
-
-    }
 
     .site-title{
         display: none;
